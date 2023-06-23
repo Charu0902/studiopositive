@@ -1,0 +1,28 @@
+.row{padding-top:20px; }
+.main-box{width:60%;margin: auto;}
+.form-control {
+    margin-top: 10px;
+}
+.register-form-col {
+    margin-top: 15px;
+}
+.register-button input {
+    margin-top: 20px;
+    background: #ed2939;
+    border-radius: 6px;
+    border-color: transparent;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    align-items: center;
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+}
+.register-row{
+    margin-top: 60px!important;
+}
+.register-form {
+    margin-bottom: 50px;
+}
