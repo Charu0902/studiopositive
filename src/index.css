@@ -11,3 +11,81 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.login-form-div {
+  background: white;
+  box-shadow: 0 2rem 5rem rgba(0,0,0,0.06);
+  padding: 40px 30px!important;
+}
+
+.login-form-row{
+  justify-content: center;
+  margin-top: 100px!important;
+}
+
+.image-div {
+  text-align: center;
+  margin: 0 auto;
+}
+.login-input{
+  border: 3px solid #ccc!important;
+}
+.submssion-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.submssion-div input{
+  background-color: #d01124;
+  color: white;
+  padding: 10px 30px;
+  border-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
+
+a.submit-forget-link{
+  text-decoration: none;
+  color: #ccc;
+}
+.submssion-div {
+  margin-top: 40px;
+}
+.login-input-div {
+  margin-top: 20px;
+}
+div#collapsibleNavbar{
+  justify-content: right;
+}
+.logo-pic img {
+  width: 80%;
+}
+.nav-link i {
+  margin-right: 10px;
+}
+.nav-container {
+  padding: 0px 40px!important;
+  box-shadow: 0 4px 12px rgba(8,46,181,.12);
+  padding-bottom: 10px!important;
+}
+.studio-nav {
+  background-color: white!important;
+
+}
+a.nav-link {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+li.nav-item {
+  margin-left: 20px;
+}
+.submssion-div input:hover{
+  background-color: transparent;
+  color: black;
+  border-color: transparent;
+  border: 2px solid #d01124;
+}
+a.nav-link:hover{
+  color: #d01124;
+}
