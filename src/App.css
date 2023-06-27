@@ -54,21 +54,26 @@ body {
 }
 
 .form-container {
-  width: 400px;
-  height: 400px;
+  width: 90%;
+  height: auto;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  /* box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4); */
   display: flex;
   flex-direction: column;
 }
 
 .form-container .header {
-  flex: 20%;
-  display: grid;
+  /* flex: 20%;
+  display: grid; */
+  text-align: center;
   place-items: center;
 }
-
+.form-container .header h1 {
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
 .form-container .body {
   flex: 60%;
 }
@@ -80,18 +85,22 @@ body {
 }
 
 .form-container .footer button {
-  border-radius: 7px;
-  width: 100px;
-  height: 40px;
-  background-color: rgb(255, 0, 140);
-  font-weight: bold;
-  color: white;
-  border: 0 none;
-  border-radius: 1px;
-  cursor: pointer;
   padding: 10px 5px;
   margin: 10px 5px;
   margin: 5px;
+  margin-top: 20px;
+  background: #ed2939;
+  border-radius: 6px;
+  border-color: transparent;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  align-items: center;
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
 }
 
 .sign-up-container {
@@ -105,10 +114,11 @@ body {
 
 .sign-up-container input {
   margin: 5px;
-  width: 200px;
+  width: 85%;
   height: 40px;
   padding-left: 5px;
-  font-size: 20px;
+  font-size: 17px;
+  margin-bottom: 15px;
 }
 
 .personal-info-container {
@@ -122,10 +132,11 @@ body {
 
 .personal-info-container input {
   margin: 5px;
-  width: 200px;
+  width: 85%;
   height: 40px;
   padding-left: 5px;
-  font-size: 20px;
+  font-size: 17px;
+  margin-bottom: 15px;
 }
 
 /* PROGRESS BAR */
@@ -139,7 +150,7 @@ body {
 .progressbar div {
   width: 33.3%;
   height: 100%;
-  background-color: rgb(98, 0, 255);
+  background-color: #ed2939;
 }
 
 .other-info-container {
@@ -161,21 +172,49 @@ body {
 
 input,
 textarea {
-  border: 2px solid rgb(98, 0, 255);
+  border: 2px solid #dee2e6;
   border-radius: 5px;
   display: block;
   margin: 20px auto;
   
 
 }
-
+/* 
 input:focus {
   border: 3px solid rgb(98, 0, 255);
+} */
+
+.form-container .footer button:hover{
+  background-color: transparent;
+    color: black;
+    border-color: transparent;
+    border: 2px solid #d01124;
 }
-
-
 .navbar{
     width: 100%;
     top: 0px;
     position: absolute;
+}
+.studio-nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .progressbar{
+    width: 90%;
+  }
+  .form-container{
+    margin-bottom: 60px;
+  }
+  li.nav-item{
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  ul.navbar-nav {
+    margin-top: 30px;
+}
+.register-form {
+  margin-bottom: 50px;
+}
 }

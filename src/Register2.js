@@ -8,40 +8,41 @@ const Register2 = (props) =>{
     const [page, setPage] = useState(0);
     const [formdata, setFromData] = useState(
       {
+        name: "",
         email: "",
+        companyName: "",
+        websiteurl: "",
         password: "",
-        confirmPassword: "",
-        firstName: "",
-        lastName: "",
-        username: "",
-        nationality: "",
-        other:""
+        ga: "",
+        gsc: "",
+        gmb: "",
+        googleads: "",
     }
     );
-    const FormTitles = ["Sign Up", "Personal Info", "Other"];
+    const FormTitles = ["Personal Details", "Select Report"];
 
     const PageDisplay = () =>{
         if (page === 0){
             return <SignUpInfo formdata = {formdata} setFromData= {setFromData}/>
         }
-        else if (page === 1){
+        else{
             return <PersonalInfo formdata = {formdata} setFromData= {setFromData}/>
         }
-        else{
-            return <OtherInfo formdata = {formdata} setFromData= {setFromData}/>
-        }
+      
     }
     const submitForm = (e) => {
         e.preventDefault();
        const senddata = {
-        email : formdata.email,
+        name : formdata.name,
+        email: formdata.email,
+        companyName: formdata.companyName,
+        websiteurl: formdata.websiteurl,
         password: formdata.password,
-        confirmPassword: formdata.confirmPassword,
-        firstName: formdata.firstName,
-        lastName: formdata.lastName,
-        username: formdata.username,
-        nationality: formdata.nationality,
-        other: formdata.other
+        ga: formdata.ga,
+        gsc: formdata.gsc,
+        gmb: formdata.gmb,
+        googleads: formdata.googleads,
+
         }
         console.log(senddata);
      axios.post('http://react.opositive.io/studio.php', senddata)
@@ -57,9 +58,16 @@ const Register2 = (props) =>{
     }
     return(
         <>
-<div className="form">
+<div className="container">
+<div className="row">
+  <div className="col-md-6 col-sm-12">
+  <img src="./Assests/loginimg.jpg" className="img-fluid"/>
+
+  </div>
+  <div className="col-md-6 col-sm-12">
+  <div className="form">
     <div className="progressbar">
-       <div style={{ width: page === 0 ? "33.3%" : page == 1 ? "66.6%" : "100%" }}></div>
+       <div style={{ width: page === 0 ? "50.0%" : "100%" }}></div>
     </div>
     <div className="form-container">
          <div className="header">
@@ -76,7 +84,7 @@ const Register2 = (props) =>{
                             <button
             onClick={() => {
               if (page === FormTitles.length - 1) {
-                // alert("FORM SUBMITTED");
+                alert("FORM SUBMITTED");
                 console.log(formdata);
                 window.location.href = '/home';
               } else {
@@ -91,6 +99,9 @@ const Register2 = (props) =>{
          </form>
 
        </div>
+</div>
+  </div>
+</div>
 </div>
         </>
     )
