@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import SignUpInfo from "./SignUpInfo";
 import PersonalInfo from "./PersonalInfo";
 import OtherInfo from "./OtherInfo";
-const Register2 = () =>{
+import axios from 'axios';
+import { Navigate, useNavigate } from "react-router-dom";
+const Register2 = (props) =>{
     const [page, setPage] = useState(0);
-    const [formdata, setFromData] = useState({
+    const [formdata, setFromData] = useState(
+      {
         email: "",
         password: "",
         confirmPassword: "",
@@ -12,8 +15,9 @@ const Register2 = () =>{
         lastName: "",
         username: "",
         nationality: "",
-        other:"",
-    });
+        other:""
+    }
+    );
     const FormTitles = ["Sign Up", "Personal Info", "Other"];
 
     const PageDisplay = () =>{
@@ -37,10 +41,19 @@ const Register2 = () =>{
         lastName: formdata.lastName,
         username: formdata.username,
         nationality: formdata.nationality,
-        other: formdata.other,
+        other: formdata.other
         }
         console.log(senddata);
-     
+     axios.post('http://react.opositive.io/studio.php', senddata)
+        .then((result) =>{
+            if(result.data.Status == 'Invalid'){
+                alert('Invalid User');
+            }
+            else{
+                console.log('Valid');
+            }
+
+        })
     }
     return(
         <>
@@ -52,10 +65,10 @@ const Register2 = () =>{
          <div className="header">
             <h1>{FormTitles[page]}</h1>
          </div>
+         <form onSubmit={submitForm}>
          <div className="body">
-           <form onSubmit={submitForm}>
+           
            {PageDisplay() }
-           </form>
          </div>
          <div className="footer">
                             <button disabled = {page == 0}    
@@ -63,8 +76,9 @@ const Register2 = () =>{
                             <button
             onClick={() => {
               if (page === FormTitles.length - 1) {
-                alert("FORM SUBMITTED");
+                // alert("FORM SUBMITTED");
                 console.log(formdata);
+                window.location.href = '/home';
               } else {
                 setPage((currPage) => currPage + 1);
               }
@@ -74,6 +88,8 @@ const Register2 = () =>{
           </button>
 
          </div>
+         </form>
+
        </div>
 </div>
         </>
