@@ -49,5 +49,22 @@
         });
       });
       </script>
+      <script>
+        $(function() {
+                      if (typeof Storage != "undefined") {
+                          if (!localStorage.getItem("GDPR-Popup-Obbserv")) {
+                              setTimeout(function() {
+                                  $('.cookiesection').css("display", "block");
+                                  // $('.GDPR-Popup-Block').css("display", "block");
+                              }, 2000);
+                          }
+                          $(".agreeWithdata").click(function(){
+                              localStorage.setItem("GDPR-Popup-Obbserv", true);
+                              $('.cookiesection').css("display", "none");
+                              // $('.GDPR-Popup-Block').css("display", "none");
+                          });
+                      }
+                  });
+      </script>
   </body>
 </html>

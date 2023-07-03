@@ -35,7 +35,7 @@ const Register = (props) =>{
                 alert('Invalid User');
             }
             else{
-                history(`/`)
+                history(`/thankyou`)
             }
 
         })
@@ -50,7 +50,7 @@ const Register = (props) =>{
         </div>
      <div className="row register-row">
           <div className="col-md-6 col-sm-12">
-            <img src="./Assests/loginimg.jpg" className="img-fluid"/>
+            <img src="./Assets/loginimg.jpg" className="img-fluid"/>
           </div>
           <div className="col-md-6 col-sm-12">
           <form onSubmit={submitForm} className="register-form">

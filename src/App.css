@@ -7,18 +7,20 @@
     margin-top: 15px;
 }
 .register-button input {
-    margin-top: 20px;
-    background: #ed2939;
-    border-radius: 6px;
-    border-color: transparent;
-    font-style: normal;
-    font-size: 15px;
-    line-height: 18px;
-    align-items: center;
-    width: 130px;
-    height: 40px;
-    color: #fff;
-    text-align: center;
+  margin-top: 40px;
+  background: #ed2939;
+  border-radius: 6px;
+  border-color: transparent;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 18px;
+  align-items: center;
+  /* width: 130px; */
+  /* height: 40px; */
+  color: #fff;
+  padding: 13px 30px;
+  text-align: center;
+  font-weight: 500;
 }
 
 /* new */

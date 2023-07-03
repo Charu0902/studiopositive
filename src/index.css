@@ -89,3 +89,93 @@ li.nav-item {
 a.nav-link:hover{
   color: #d01124;
 }
+.thankyoupageparent{
+  text-align: center;
+
+}
+.thankyoupara{
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+/* or 140% */
+
+text-align: center;
+font-feature-settings: 'salt' on, 'liga' off;
+
+/* Default / Black */
+
+color: #0B0D17;
+margin-top: 2%;
+}
+
+.thankyou-button{
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
+  height: 44px;
+  gap: 10px;
+  border-color: transparent;
+  background: #ED2939;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  margin-top: 2%;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+}
+.thankyouheading {
+  margin-top: 30px;
+}
+.thankyoupageparent {
+  margin-top: 80px;
+}
+.thankyou-button:hover{
+  background-color: transparent;
+  color: black;
+  border-color: transparent;
+  border: 2px solid #d01124;
+}
+i.fa.fa-long-arrow-right {
+  font-size: 17px;
+}
+
+.register-button input:hover{
+  background-color: transparent;
+  color: black;
+  border-color: transparent;
+  border: 2px solid #d01124;
+}
+.cookiebutton {
+  background-color: #ed2939;
+  color: #fff!important;
+  padding: 10px 30px;
+  border: 1px solid #de5959;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: Graphik,sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+p.cookietext {
+  color: #fff;
+  font-size: 14px;
+  margin: 0 30px 0 0;
+  font-family: Graphik,sans-serif;
+  display: block;
+}
+.cookierow {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.cookiesection {
+  border: 1px solid #000;
+  padding: 20px;
+  background-color: #000;
+  direction: ltr;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  opacity: 1;
+}

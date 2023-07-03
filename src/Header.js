@@ -6,7 +6,7 @@ const Header = () =>{
         <>
         <nav class="navbar navbar-expand-sm studio-nav">
   <div class="container-fluid nav-container">
-    <Link class="navbar-brand logo-pic" to="/">                  <img src="./Assests/opositive-logo.png" className="img-fluid"/>
+    <Link class="navbar-brand logo-pic" to="/">                  <img src="./Assets/opositive-logo.png" className="img-fluid"/>
 </Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>

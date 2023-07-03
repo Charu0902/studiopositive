@@ -36,7 +36,7 @@ const Login = () =>{
                
                   <div className="col-md-4 col-sm-12 login-form-div">
                   <div className="image-div">
-                  <img src="./Assests/opositive-logo.png" className="img-fluid"/>
+                  <img src="./Assets/opositive-logo.png" className="img-fluid"/>
                   </div>
                        <form onSubmit={submitForm} className="login-form">
                         <div className="col-md-12 login-input-div">
