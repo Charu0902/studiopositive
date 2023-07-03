@@ -1,7 +1,17 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, NavLink, Navigate, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () =>{
+  const [auth, setAuth] = useState();
+  const [name, setname] = useState();
+  let navigate = useNavigate();
+useEffect(() =>{
+  var name = localStorage.getItem('name');
+
+setname(name);
+},
+[])
     return(
         <>
         <nav class="navbar navbar-expand-sm studio-nav">

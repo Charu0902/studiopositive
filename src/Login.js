@@ -18,6 +18,8 @@ const Login = () =>{
         axios.post('https://react.opositive.io/login.php', senddata)
         .then((result) =>{
             if(result.data.status === "200" ){
+               window.localStorage.setItem('email', result.data.email);
+               window.localStorage.setItem('name', result.data.name);
                 navigate(`/home`)
                 console.log(result.data);
 
