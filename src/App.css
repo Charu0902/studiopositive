@@ -202,6 +202,21 @@ input:focus {
   top: 0;
   width: 100%;
 }
+div#sucess{
+  display: none;
+}
+div#sucess {
+  text-align: center;
+  background: #8bcd8b;
+  margin-top: 30px;
+}
+
+
+div#sucess p {
+  font-size: 14px;
+  padding: 3px;
+  font-weight: 500;
+}
 @media only screen and (max-width: 600px) {
   .progressbar{
     width: 90%;

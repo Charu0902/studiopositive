@@ -8,6 +8,8 @@ import Register from './Register';
 import Register2 from './Register2';
 import Thankyou from './Thankyou';
 import Cookie from './Cookie';
+import Forgetpassword from './Forgetpassword';
+import Resetpassword from './Resetpassword';
 
 // import Form from './components/Form';
 function App() {
@@ -22,6 +24,8 @@ function App() {
   <Route path='/home'  element = {<Home/>}/>
   <Route path='/register2'  element = {<Register2/>}/>
   <Route path='/thankyou'  element = {<Thankyou/>}/>
+  <Route path='/forget-password' element = {<Forgetpassword/>}/>
+  <Route path='/reset-password' element = {<Resetpassword/>}/>
 </Routes>
 </BrowserRouter>
 <Cookie></Cookie>

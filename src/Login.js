@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import axios from 'axios';
+import { Link, NavLink, Navigate, useNavigate } from "react-router-dom";
 
 const Login = () =>{
     let navigate = useNavigate();
@@ -52,7 +52,7 @@ const Login = () =>{
 
                         </div>
                         <div className="col-md-12 submssion-div">
-                        <a href="#" class="submit-forget-link">Forget password</a>
+                        <Link to="/forget-password" class="submit-forget-link">Forget password</Link>
                           <input type="submit" name="submit" value='Login'/>
                         </div>
                        </form>
